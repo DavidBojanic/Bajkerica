@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="David Bojanić">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Rent-a-bike</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo-and-name">
+                <a href="">
+                    <img id="logo" src="/logo.webp" alt="logo"
+                width="80" height="80">
+                </a>
+                <h1 id="header-name"><a href="index.html">Bajkerica</a></h1>
+            </div>
+
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search..." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            
+            <div class="contact">
+                <i class="fa fa-phone" style="font-size:38px;color:white"></i>
+                <p>+382 67-123-456</p>
+            </div>
+
+            <div class="korpa" id="cart">
+                <a href="korpa.html">
+                    <i class="fa fa-shopping-basket basket-icon"></i> 
+                    <h5>Cart</h5>
+                </a>
+            </div>
+
+        </header>
+
+        <div class="filter">
+            <label for="sort">Sort by:</label><br>
+            <select name="sort" id="sort">
+                <option value="alphabetically_asc">Alphabetically (A-Z)</option>
+                <option value="alphabetically_desc">Alphabetically (Z-A)</option>
+                <option value="price_asc">Price (Low to High)</option>
+                <option value="price_desc">Price (High to Low)</option>
+                <option value="height_asc">Height (Low to High)</option>
+                <option value="height_desc">Height (High to Low)</option>
+            </select>
+            <h2>Filters</h2>
+            <label for="type">Type of bike:</label><br>
+            <select name="type" id="type">
+                <option value="MTB">Mountain</option>
+                <option value="road">Road</option>
+                <option value="electric">Electric</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="height">Height:</label><br>
+            <select name="height" id="height">
+                <option value="165">up to 165cm</option>
+                <option value="175">160cm - 175cm</option>
+                <option value="185">175cm - 185cm</option>
+                <option value="195">185cm - 195cm</option>
+                <option value="200">195cm+</option>
+            </select>
+            <br><br>
+            <h2 id="price-range">Price Range</h2>
+            <div class="price-input">
+                <div class="field">
+                  <span>Min</span>
+                  <input type="number" class="input-min" value="25">
+                </div>
+                <div class="separator">-</div>
+                <div class="field">
+                  <span>Max</span>
+                  <input type="number" class="input-max" value="75">
+                </div>
+            </div>
+              <div class="slider">
+                <div class="progress"></div>
+              </div>
+              <div class="range-input">
+                <input type="range" class="range-min" min="0" max="100" value="25" step="1">
+                <input type="range" class="range-max" min="0" max="100" value="75" step="1">
+              </div>
+              <input type="reset" value="Reset" class="submit-reset">
+              <input type="button" value="Apply" class="submit-apply">
+            </div>
+        
+        <div class="ponuda">  
+        </div>
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>   
+        <script src="script.js"></script> 
+    </body>
+</html>

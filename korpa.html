@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-name">
+            <img id="logo" src="/logo.webp" alt="logo"
+            width="80" height="80">
+            <h1 id="header-name"><a href="index.html">Bajkerica</a></h1>
+        </div>
+
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        
+        <div class="contact">
+            <i class="fa fa-phone" style="font-size:38px;color:white"></i>
+            <p>+382 67-123-456</p>
+        </div>
+
+        <div class="korpa">
+            <a href="korpa.html">
+                <i class="fa fa-shopping-basket basket-icon"></i> 
+                <h5>Cart</h5>
+            </a>
+        </div>
+    </header>
+    <h1 class="cart-header">Shopping Cart: *price*</h1>
+    <button class="buy">Rent <strong>*coming soon*</strong></button>
+    <div class="cart-items"></div> 
+    <script src="script.js"></script> 
+</body>
+</html>
